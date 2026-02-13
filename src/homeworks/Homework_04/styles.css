@@ -1,0 +1,8 @@
+.homework_04_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1;
+  background-color: rgb(23, 23, 76);
+  height: 90vh;
+}
