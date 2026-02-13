@@ -1,11 +1,24 @@
-.login_form {
-  width: 500px;
-  padding: 40px;
-  background-color: #ffffff;
-  box-shadow: 0 0 15px rgba(19, 18, 18, 0.1);
+.login-form-container {
+  display: flex;
+  flex-direction: column;
+  width: 590px;
+  min-height: 450px;
+  max-height: fit-content;
+  border: 1px solid #000000;
+  padding: 60px;
+  border-radius: 4px;
+  background-color: white;
+  gap: 30px;
 }
 
-.login_title {
-  text-align: center;
-  margin-bottom: 25px;
+.title {
+  color: #000000;
+  font-size: 24px;
+  font-weight: normal;
+}
+
+.inputs-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
