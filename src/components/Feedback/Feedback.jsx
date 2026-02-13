@@ -15,11 +15,10 @@ const Reset = () => {setLikeCount(0); setDislikeCount(0)};
   <h1 className= "header">You can leave your ratings here </h1>
   <div className="emoji">👇🏻</div>
   <div className="button_row">
-       <Button name=" 👍🏻 like" onClick={like} />
-        <Button name="👎🏻 dislike" onClick={disLike} /> 
+       <Button name=" 👍🏻 like" onClick={like} /> {likeCount}
+        <Button name="👎🏻 dislike" onClick={disLike} /> {dislikeCount}
       </div>
-        <p className="count">🧮 Total ratings:  {likeCount + dislikeCount} </p>
-         <div className="button_control">
+       <div className="button_control">
         <Button name="reset" onClick={Reset} />  
       </div>
       </div>

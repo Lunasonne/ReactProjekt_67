@@ -25,6 +25,8 @@ margin: 0;
  }
  .button_control {
   width: 400px;
+  margin-top: 20px;
+  margin-bottom: 30px
 } 
 .button_row {
   display: flex;          
