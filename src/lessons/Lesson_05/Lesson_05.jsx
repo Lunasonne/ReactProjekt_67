@@ -2,7 +2,6 @@ import { useState } from "react";
 import { v4 } from "uuid";
 
 import Button from "../../components/Button/Button";
-
 import "./styles.css";
 
 function Lesson_05() {
@@ -30,6 +29,15 @@ function Lesson_05() {
   //   });
   // };
 
+  const buttonNames = [
+    "Burger",
+    "Fries",
+    "Cola",
+    "Salad",
+    "Ketchup",
+    "Ice-cream",
+  ];
+
   const addMenuElement = (menuEl) => {
     setOrder((prevValue) => {
       return [...prevValue, menuEl];
@@ -42,12 +50,20 @@ function Lesson_05() {
     return <li key={v4()} className="order_item">{orderEl}</li>;
   });
 
+  const menuButtons = buttonNames.map((name, index) => {
+    return (
+      <div key={v4()}  className="button_control">
+        <Button name={name} onClick={() => addMenuElement(name)} />
+      </div>
+    );
+  });
+
   return (
     <div className="lesson_05_wrapper">
-      <div className="menu_wrapper">
+     <div className="menu_wrapper">
         <h1 className="menu">Menu:</h1>
         <div className="button_wrapper">
-          <div className="button_control">
+         {/*   <div className="button_control">
             <Button name="Burger" onClick={() => addMenuElement("Burger")} />
           </div>
           <div className="button_control">
@@ -67,7 +83,8 @@ function Lesson_05() {
               name="Ice-cream"
               onClick={() => addMenuElement("Ice-Cream")}
             />
-          </div>
+          </div> */}
+          {menuButtons}
         </div>
       </div>
 
