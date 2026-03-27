@@ -47,8 +47,7 @@ function Lesson_05() {
   // map() JSX
   // ["Burger", "Fries"] => [<li>Burger</li>, <li>Fries</li>]
   const finalOrder = order.map((orderEl) => {
-    return <li key={v4()} className="order_item">{orderEl}</li>;
-  });
+    return <li key={v4()} className="order_item">{orderEl}</li>;}  )   
 
   const menuButtons = buttonNames.map((name, index) => {
     return (
